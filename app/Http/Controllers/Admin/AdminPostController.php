@@ -8,7 +8,7 @@ use App\Post;
 class AdminPostController extends Controller
 {
     
-    ic function index()
+    public function index()
     {
         $posts = Post::all();
         
