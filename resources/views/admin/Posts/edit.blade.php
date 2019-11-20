@@ -5,7 +5,7 @@
 
 <h1> Novo Post</h1>
 
-<form method="POST" action="{{url('admin/posts'.$post->id)}}" >
+<form method="POST" action="{{url('admin/posts/'.$post->id)}}">
     <!--@csrf-->
     {!! csrf_field() !!}
     <input type="hidden" name="_method" value="PUT">

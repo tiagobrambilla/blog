@@ -4,7 +4,7 @@
 @section('content')
 
 <h1>LISTA DE POSTS</h1>
-<a href="{{url('posts/create')}}" class="btn btn-primary">Novo Post</a>
+<a href="{{url('admin/posts/create')}}" class="btn btn-primary">Novo Post</a>
 <table class="table">
     <thead>
         <th>#</th>

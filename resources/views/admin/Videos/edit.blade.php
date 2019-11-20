@@ -1,5 +1,5 @@
 @extends('admin/base')
-@section('title','Criar novo POSTS')
+@section('title','Novo Video')
 
 @section('content')
 
