@@ -13,11 +13,11 @@ class User extends Authenticatable
         'name', 'email', 'password', 'tipo'
     ];
 
-ected $hidden = [
+protected $hidden = [
         'password', 'remember_token',
     ];
 
     public function comentario(){
-        return $this->hasMany(Comentario: :class);
+        return $this->hasMany(Comentario::class);
     }
 }
