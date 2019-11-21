@@ -5,7 +5,7 @@
 
 <h1> Novo Post</h1>
 
-<form method="POST" action="{{url('posts')}}" >
+<form method="POST" action="{{url('admin/posts')}}" >
     <!--@csrf-->
     {!! csrf_field() !!}
     <label>Título</label>

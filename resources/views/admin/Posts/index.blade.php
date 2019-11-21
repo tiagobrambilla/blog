@@ -24,11 +24,10 @@
                     {{csrf_field()}}
                     
                     <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit">Exluir</button>
+                    <button type="submit">Excluir</button>
                 </form>
             </td>
         </tr>
-        {{$post->titulo}}
         @endforeach
     </tbody>
 </table>
