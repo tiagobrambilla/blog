@@ -6,7 +6,7 @@
 <h1> Novo Vídeo</h1>
 
 <form method="POST" action="{{url('admin/videos')}}" >
-    <!--@csrf-->
+    @csrf
     {!! csrf_field() !!}
     <label>Título</label>
     <input type="text" name="titulo">

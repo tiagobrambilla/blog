@@ -6,7 +6,7 @@
 <h1> Novo Vídeo</h1>
 
 <form method="POST" action="{{url('admin/videos/'.$video->id)}}" >
-    @csrf
+    <!-- @csrf -->
     {!! csrf_field() !!}
     <input type="hidden" name="_method" value="PUT">
     <label>Título</label>

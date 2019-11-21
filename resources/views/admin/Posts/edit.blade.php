@@ -6,7 +6,7 @@
 <h1>Novo Post</h1>
 
 <form method="post" action="{{url('admin/posts/'.$post->id)}}">
-    @csrf
+    <!-- @csrf -->
     {!! csrf_field() !!}
     <input type="hidden" name="_method" value="PUT">
     <label>Título</label>
