@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Teste {{ $nome }}
+                    {{ $nome }}
                 </div>
 
                 <div class="links">

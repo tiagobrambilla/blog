@@ -1,23 +1,23 @@
 @extends('admin/base')
-@section('title','Novo Video')
+@section('title', 'Criar novo VIDEOS')
 
 @section('content')
+	<h1>Novo Video</h1>
 
-<h1> Novo Vídeo</h1>
+	<form method="post" action="{{url('admin/videos/'.$video->id)}}">
+		@csrf
+		{!! csrf_field() !!}
 
-<form method="POST" action="{{url('admin/videos/'.$video->id)}}" >
-    <!-- @csrf -->
-    {!! csrf_field() !!}
-    <input type="hidden" name="_method" value="PUT">
-    <label>Título</label>
-    <input type="text" name="titulo" value="{{$video->titulo}}">
-    
-    <label>Descrição</label>
-    <textarea name="descricao">{{$video->descricao}}</textarea>
-    
-    <label>Video</label>
-    <input type="text" name="link" value="{{$video->link}}">
-    <input type="submit" name="" value="Cadastrar">
-</form>
+		<input type="hidden" name="_method" value="PUT">
+		<label>Título</label>
+		<input type="text" name="titulo" value="{{$video->titulo}}">
 
+		<label>Link</label>
+		<input type="text" name="link" value="{{$video->link}}">
+
+		<label>Descrição</label>
+		<textarea name='descricao'>{{$video->descricao}}</textarea>
+
+		<input type="submit" value="Cadastrar">
+	</form>
 @endsection
